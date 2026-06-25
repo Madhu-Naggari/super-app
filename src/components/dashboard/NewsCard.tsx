@@ -17,13 +17,17 @@ export default function NewsCard() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    getNews().then((data) => {
-      const validArticles = data.filter(
-        (article: Article) => article.urlToImage,
-      );
+    getNews()
+      .then((data) => {
+        const validArticles = data.filter(
+          (article: Article) => article.urlToImage && article.title,
+        );
 
-      setArticles(validArticles);
-    });
+        setArticles(validArticles);
+      })
+      .catch(() => {
+        setArticles([]);
+      });
   }, []);
 
   useEffect(() => {
