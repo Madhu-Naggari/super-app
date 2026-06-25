@@ -1,36 +1,224 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Super App
 
-## Getting Started
+A modern entertainment dashboard built with Next.js, TypeScript, Tailwind CSS, Zustand, and external APIs for Weather, News, and Movies.
 
-First, run the development server:
+Features
 
-```bash
+Authentication & Registration
+
+- User Registration Form
+- Name Validation
+- Username Validation
+- Email Validation
+- Mobile Number Validation
+- Terms & Conditions Validation
+- React Hook Form + Zod Validation
+- Data Persistence using Local Storage
+
+Category Selection
+
+- Entertainment Category Selection
+- Minimum 3 Categories Required
+- Category Persistence using Zustand and Local Storage
+
+Dashboard
+
+- User Profile Widget
+- Weather Information Widget
+- Notes Widget with Persistence
+- News Feed Widget
+- Auto-changing News Every 2 Seconds
+- Circular Countdown Timer
+- Responsive Layout
+
+Entertainment Discovery
+
+- Dynamic Movie Listings
+- Movies Based on Selected Categories
+- Movie Hover Animations
+- Movie Details Modal
+- Responsive Movie Grid
+
+⸻
+
+Tech Stack
+
+Frontend
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+
+State Management
+
+- Zustand
+
+Form Handling
+
+- React Hook Form
+- Zod
+
+API Integration
+
+- OpenWeatherMap API
+- News API
+- OMDB API
+
+Storage
+
+- Browser Local Storage
+
+⸻
+
+Project Structure
+
+src
+│
+├── app
+│ ├── signup
+│ ├── categories
+│ ├── dashboard
+│ └── movies
+│
+├── components
+│ ├── auth
+│ ├── category
+│ ├── dashboard
+│ └── movies
+│
+├── services
+│ ├── weather.ts
+│ ├── news.ts
+│ └── movies.ts
+│
+├── store
+│ └── useUserStore.ts
+│
+├── utils
+│ └── localStorage.ts
+│
+└── schemas
+└── signupSchema.ts
+
+⸻
+
+Environment Variables
+
+Create a .env.local file in the project root.
+
+NEXT_PUBLIC_WEATHER_API_KEY=YOUR_WEATHER_API_KEY
+NEXT_PUBLIC_NEWS_API_KEY=YOUR_NEWS_API_KEY
+NEXT_PUBLIC_OMDB_API_KEY=YOUR_OMDB_API_KEY
+
+⸻
+
+Installation
+
+Clone the repository:
+
+git clone <https://github.com/Madhu-Naggari/super-app.git>
+
+Navigate into the project:
+
+cd super-app
+
+Install dependencies:
+
+npm install
+
+Run development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+⸻
 
-## Learn More
+Production Build
 
-To learn more about Next.js, take a look at the following resources:
+Build the application:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Start production server:
 
-## Deploy on Vercel
+npm start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+⸻
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+APIs Used
+
+OpenWeatherMap
+
+Provides live weather information.
+
+News API
+
+Provides latest news updates with auto-refresh functionality.
+
+OMDB API
+
+Provides movie listings and detailed movie information.
+
+⸻
+
+Assignment Requirements Covered
+
+✅ Authentication & Registration
+
+✅ Form Validation
+
+✅ Category Selection
+
+✅ Minimum Category Restriction
+
+✅ User Dashboard
+
+✅ Weather Widget
+
+✅ News Feed Widget
+
+✅ Countdown Timer
+
+✅ Notes Persistence
+
+✅ Movie Discovery Page
+
+✅ Dynamic API Integration
+
+✅ Zustand State Management
+
+✅ Responsive UI
+
+✅ Tailwind CSS
+
+✅ Local Storage Persistence
+
+⸻
+
+Deployment
+
+Vercel
+
+Deploy easily using Vercel:
+
+npm run build
+
+Netlify
+
+Build and deploy:
+
+npm run build
+
+⸻
+
+Author
+
+Madhu Naggari
+
+MERN Stack Developer
+
+Frontend Development • Backend Development • UI/UX • Full Stack Development
